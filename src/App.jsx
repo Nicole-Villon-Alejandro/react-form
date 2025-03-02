@@ -8,6 +8,13 @@ function App() {
     setNewPost(e.target.value)
   }
 
+  const handleSubmit = (e) => {
+    e.preventDefault()
+    setPost( () => [ ...postMessage, newPost]  )
+    setNewPost('')
+
+  }
+
   return (
     <>
       <div className="container">
