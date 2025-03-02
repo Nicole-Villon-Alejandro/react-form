@@ -10,7 +10,7 @@ function App() {
 
   const handleSubmit = (e) => {
     e.preventDefault()
-    setPost( () => [ ...postMessage, newPost]  )
+    setPost( () => [ ...post, newPost]  )
     setNewPost('')
 
   }
